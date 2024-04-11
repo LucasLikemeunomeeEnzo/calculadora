@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        var n1, n2, total
+
+        function somar() {
+        n1 = parseInt(document.getElementById('n1').value)
+        n2 = parseInt(document.getElementById('n2').value)
+
+        total = n1 + n2
+        document.getElementById('aparecer').innerHTML = total
+        }
+
+        function subtrair() {
+        n1 = parseInt(document.getElementById('n1').value)
+        n2 = parseInt(document.getElementById('n2').value)
+
+        total = n1 - n2
+        document.getElementById('aparecer').innerHTML = total
+        }
+
+        function multiplicar() {
+        n1 = parseInt(document.getElementById('n1').value)
+        n2 = parseInt(document.getElementById('n2').value)
+
+        total = n1 * n2
+        document.getElementById('aparecer').innerHTML = total
+        }
+
+        function dividir() {
+        n1 = parseInt(document.getElementById('n1').value)
+        n2 = parseInt(document.getElementById('n2').value)
+
+        total = n1 / n2
+        document.getElementById('aparecer').innerHTML = total
+        }
+    </script>
+</head>
+<body>
+	<h1>Calculadora</h1>
+    <h3 id="aparecer"></h3>
+    <input type="number" placeholder="Insira o primeiro número" id="n1">
+    <input type="number" placeholder="Insira o segundo número" id="n2">
+    <input type="button" value="Somar" id="total" onclick="somar()">
+    <input type="button" value="Subtrair" id="total" onclick="subtrair()">
+    <input type="button" value="Multiplicar" id="total" onclick="multiplicar()">
+    <input type="button" value="Dividir" id="total" onclick="dividir()">
+</body>
+</html>
